@@ -9,7 +9,10 @@ print  system("df -h");
 print "</pre>";
 
 my @lines = `df -h`;
+print "<pre>";
 print @lines;
+print "</pre>";
+
 print "<pre>";
 for my $line (@lines) {
     chomp $line;
