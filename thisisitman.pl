@@ -8,3 +8,9 @@ print "<pre>";
 print  system("df -h");
 print "</pre>";
 
+my @lines = system("df -h");
+print "<pre>";
+for my $line in @lines {
+print  $line + "\n";
+}
+print "</pre>";
