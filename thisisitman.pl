@@ -14,7 +14,7 @@ print @lines;
 print "</pre>";
 
 print "<pre>";
-for my $line (@lines) {
+foreach my $line (@lines) {
     chomp $line;
     print  ($line + "\n");
     
