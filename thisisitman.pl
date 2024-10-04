@@ -15,3 +15,8 @@ for my $line (@lines) {
     print  ($line + "\n");
 }
 print "</pre>";
+
+
+print "<pre>";
+`df -h`;
+print "</pre>";
