@@ -11,6 +11,7 @@ print "</pre>";
 my @lines = `df -h`;
 print "<pre>";
 for my $line (@lines) {
-    print  $line + "\n";
+    chomp $line;
+    print  ($line + "\n");
 }
 print "</pre>";
