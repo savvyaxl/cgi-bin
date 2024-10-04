@@ -10,7 +10,7 @@ print "</pre>";
 
 my @lines = `df -h`;
 print "<pre>";
-for my $line in (@lines) {
+for my $line (@lines) {
     print  $line + "\n";
 }
 print "</pre>";
